@@ -1,0 +1,29 @@
+body,
+input,
+button,
+textarea{
+    color: black;
+    font-family: 'Asap',sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+body{
+    background-color:#EDEDED;
+    font-family: "Asap",sans-serif;
+    margin: 0;
+}
+footer,header{
+    background-color: green;
+    height: 100px;
+}
+h1{
+    color: red;
+}
+p{
+    margin: 0;
+}
+@media  (min-width:1120px){
+    .content-area{
+        display: flex;
+    }
+}
