@@ -1,29 +1,38 @@
 body,
-input,
 button,
+input,
 textarea{
-    color: black;
     font-family: 'Asap',sans-serif;
     font-size: 16px;
     line-height: 1.8;
+    color: black;
 }
 body{
-    background-color:#EDEDED;
-    font-family: "Asap",sans-serif;
+    background-color: #EDEDED;
     margin: 0;
+    font-family: 'Asap',sans-serif;
 }
-footer,header{
+.header,.footer{
     background-color: green;
     height: 100px;
 }
+.side-bar{
+    background-color: blue;
+    color: white;
+}
 h1{
+    margin: 0;
     color: red;
 }
 p{
     margin: 0;
 }
-@media  (min-width:1120px){
+@media screen and (min-width:1120px) {
     .content-area{
         display: flex;
     }
+    .side-bar{
+        flex:0 0 320px;
+    }
+    
 }
