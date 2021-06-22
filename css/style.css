@@ -20,7 +20,7 @@ body {
 
 
 header, footer {
-    background-color: green;
+    background-color: black;
     height: 100px;
 }
 
@@ -48,3 +48,48 @@ p {
 		flex: 0 0 320px;
 	}
 }
+/*******************************
+     Header Styles Start
+*********************************/
+.site-header{
+	height: 400px;
+	display: flex;
+	flex-flow: column;
+}
+.site-info{
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+
+}
+.site-title{
+	margin: 0;
+	font-size: 2em;
+	font-weight: 300;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+.description{
+	 text-align: center;
+	 font-size: 2em;
+	 font-style: italic;
+	 margin-top: -.8;
+	 color: #F6D200;
+}
+.main-menu{
+	padding: 1em 1em;
+	color: black;
+	background-color: #F6D200;
+}
+@media screen and (min-width: 1120px) {
+	.site-title{
+		font-size: 4em;
+		font-weight: 500;
+		
+	}
+}
+/*******************************
+     Header Styles End
+*********************************/
