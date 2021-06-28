@@ -232,58 +232,150 @@ End Header styles
 
 }
 
-
 /*--------------------------------------------------------------
 	END WATCH SECTION STYLES
 --------------------------------------------------------------*/
 
+
 /*--------------------------------------------------------------
-	END WATCH SECTION STYLES
+start Section download styles
 --------------------------------------------------------------*/
 
-.download-card{
+.download-card {
 	margin-bottom: 1em;
 }
-.download-content{
+
+.download-content {
 	background-color: white;
 }
-.download-content a{
+
+.download-content a {
 	background-color: black;
 	color: white;
 	padding: 1em 2em;
 	text-decoration: none;
 	text-transform: capitalize;
 }
-.download-content a i{
+
+.download-content a i {
 	font-size: 2.5em;
 }
-.download-info{
+
+.download-info {
 	padding: 1em 2em;
 }
-.download-info h4{
+
+.download-info h4 {
 	margin: 0;
 }
-.download-info p{
+
+.download-info p {
 	margin: 0;
 	font-size: .9em;
 }
-.download-cast img{
-		width: 60px;
-		height:60px;
-		border-radius: 50%;
+
+.download-cast img {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
 }
-.downlaod-rating{
+
+.download-rating {
 	background-color: #F6D200;
 	padding: 1em 2em;
 	color: black;
 	font-size: .9em;
 }
-.downlaod-rating .rate{
+
+.download-rating .rate {
 	font-size: 2.5em;
 	font-weight: bold;
 	margin-bottom: -.25em;
 }
-.download-content{
+
+.download-content {
 	display: flex;
 	flex-flow: column;
+
 }
+
+.download-content a, .download-rating {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.download-genre, .download-cast {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.download-info h4 {
+	flex-basis: 20%;
+}
+
+.download-genre {
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 810px) {
+	.download-content {
+		display: flex;
+		flex-flow: row;
+	}
+
+	.download-content a, .download-rating {
+		flex-grow: 1;
+	}
+
+	.download-info {
+		flex-grow: 2;
+	}
+}
+
+/*--------------------------------------------------------------
+end Section download styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+start Section gallery styles
+--------------------------------------------------------------*/
+
+.gallery-imgs { 
+  margin-left: -8px;
+}
+
+.gallery-imgs { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-img {
+	height: 250px;
+	flex-grow: 1;
+	margin: 0 0 8px 8px;
+}
+
+.gallery-img:nth-child(4n+1) {
+     flex-basis: 250px;
+}
+.gallery-img:nth-child(4n+2) {
+     flex-basis: 325px;
+}
+.gallery-img:nth-child(4n+3) {
+     flex-basis: 180px;
+}
+.gallery-img:nth-child(4n+4) {
+     flex-basis: 380px;
+}
+
+.gallery-img img {
+	height: 100%;
+	object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+end Section gallery styles
+--------------------------------------------------------------*/
