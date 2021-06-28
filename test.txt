@@ -1,42 +1,34 @@
 
-.download-content {
-	display: flex;
-	flex-flow: column;
-
+.gallery-imgs { 
+  margin-left: -8px;
 }
 
-.download-content a, .download-rating {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	text-align: center;
+.gallery-imgs { 
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.download-genre, .download-cast {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+.gallery-img {
+	height: 250px;
+	flex-grow: 1;
+	margin: 0 0 8px 8px;
 }
 
-.download-info h4 {
-	flex-basis: 20%;
+.gallery-img:nth-child(4n+1) {
+     flex-basis: 250px;
+}
+.gallery-img:nth-child(4n+2) {
+     flex-basis: 325px;
+}
+.gallery-img:nth-child(4n+3) {
+     flex-basis: 180px;
+}
+.gallery-img:nth-child(4n+4) {
+     flex-basis: 380px;
 }
 
-.download-genre {
-	margin-bottom: 10px;
+.gallery-img img {
+	height: 100%;
+	object-fit: cover;
 }
 
-@media screen and (min-width: 810px) {
-	.download-content {
-		display: flex;
-		flex-flow: row;
-	}
-
-	.download-content a, .download-rating {
-		flex-grow: 1;
-	}
-
-	.download-info {
-		flex-grow: 2;
-	}
-}
