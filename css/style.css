@@ -164,3 +164,126 @@ End Header styles
 	}
 
 }
+
+/*--------------------------------------------------------------
+	END THE POSTS STYLES
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+	START WATCH SECTION STYLES
+--------------------------------------------------------------*/
+
+.section-header {
+	color: black;
+	font-size: 3em;
+	text-align: center;
+}
+
+.watch-card {
+	margin-bottom: 1em;
+}
+
+.watch-content {
+	background-color: black;
+	color: white;
+	padding: 3em;
+}
+
+.watch-content h2 {
+	font-size: 2em;
+	font-weight: 300;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.movie-info {
+	font-weight: bold;
+}
+
+.movie-info span {
+	padding-right: 1.5em;
+}
+
+.movie-story {
+	margin: 1em 0;
+}
+
+.watch-content a {
+	color: white;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 810px) {
+
+	.watch-card {
+		display: flex;
+	}
+
+	.watch-content {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+	}
+
+	.img-right {
+		order: 2;
+	}
+
+}
+
+
+/*--------------------------------------------------------------
+	END WATCH SECTION STYLES
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	END WATCH SECTION STYLES
+--------------------------------------------------------------*/
+
+.download-card{
+	margin-bottom: 1em;
+}
+.download-content{
+	background-color: white;
+}
+.download-content a{
+	background-color: black;
+	color: white;
+	padding: 1em 2em;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.download-content a i{
+	font-size: 2.5em;
+}
+.download-info{
+	padding: 1em 2em;
+}
+.download-info h4{
+	margin: 0;
+}
+.download-info p{
+	margin: 0;
+	font-size: .9em;
+}
+.download-cast img{
+		width: 60px;
+		height:60px;
+		border-radius: 50%;
+}
+.downlaod-rating{
+	background-color: #F6D200;
+	padding: 1em 2em;
+	color: black;
+	font-size: .9em;
+}
+.downlaod-rating .rate{
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-bottom: -.25em;
+}
+.download-content{
+	display: flex;
+	flex-flow: column;
+}
