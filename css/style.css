@@ -28,7 +28,7 @@ header, footer {
 }
 
 .sidebar-right {
-	background-color: blue;
+	background-color: #EDEDED;
 	color: white
 }
 
@@ -378,4 +378,51 @@ start Section gallery styles
 
 /*--------------------------------------------------------------
 end Section gallery styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+start Section sidebar styles
+--------------------------------------------------------------*/
+
+.sidebar-right {
+	padding: 2em;
+	color: black;
+}
+
+.widget {
+	background-color: white;
+	margin-bottom: 2em; 
+}
+
+.widget-content {
+	padding: .5em 2em;
+}
+
+.sidebar-menu ul {
+	list-style-type: none;
+	padding-left: 1em;
+}
+
+.sidebar-menu a {
+	display: block;
+	padding-bottom: .4em;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 810px) and (max-width: 1120px) {
+	.sidebar-right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.widget {
+		flex-basis: 48.8%;
+	}
+}
+
+/*--------------------------------------------------------------
+end Section sidebar styles
 --------------------------------------------------------------*/
